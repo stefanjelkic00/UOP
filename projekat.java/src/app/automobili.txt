@@ -1,0 +1,2 @@
+Beker,BMW,X5,2018,36,200,dizel
+Firmino,BMW,X7,2019,40,300,dizel
