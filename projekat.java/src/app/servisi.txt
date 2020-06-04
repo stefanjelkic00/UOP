@@ -1,0 +1,49 @@
+1,BMW,X5,Arnold,09:15,opis,motor,vrata,prosao
+2,BMW,X7,null,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+3,BMW,X7,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+4,BMW,X7,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+5,BMW,X7,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+6,BMW,X7,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+7, ime=null, prezime=Firmino,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+8,VOLKSWAGEN,GOLF7,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+9,BMW,X7,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+10,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+11,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+12,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+13,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+14,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+15,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+16,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+17,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+18,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+19,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+20,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+21,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+22,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+23,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+24,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+25,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao
+
+26,null,null,X7,10:00,opis novih kola,[Deo [naziv=vrata], Deo [naziv=motor]],prosao

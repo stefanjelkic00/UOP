@@ -1,5 +1,15 @@
 package model;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.io.RandomAccessFile;
+
 public class Automobil {
 
 	private Musterija vlasnik;
@@ -91,6 +101,106 @@ public class Automobil {
 				+ ", vrsta_goriva=" + vrsta_goriva + "]";
 	}
 	
+	public static void dodajAutomobil(Automobil auto) throws IOException {
+		
+		String filepath = "C:\\Users\\stefa\\git\\UOP\\projekat.java\\src\\app\\automobili.txt";
+		
+		FileReader frAd = new FileReader(filepath);
+		
+		BufferedReader brAd = new BufferedReader(frAd);
+		String last = "", line;
+
+	    while ((line = brAd.readLine()) != null) { 
+	        last = line;
+	    }
+	    
+	    String[] fields = last.split(",");
+	    
+	    String id = fields[0];
+	    Integer newId = Integer.parseInt(id) + 1;
+
+		brAd.close();
+		
+		try{	   	
+	    	
+
+	    	
+	    	FileWriter fw = new FileWriter(filepath,true);
+	    	BufferedWriter bw = new BufferedWriter(fw);
+	    	PrintWriter pw = new PrintWriter(bw);
+	    	String autoId = newId.toString();
+	    	String newRow =   "\n" +  autoId + ',' + auto.getVlasnik().getPrezime() + "," + auto.getMarka() + "," + auto.getModel() 
+	    					+ "," + auto.getGodina_proizvodnje() + "," + auto.getZapremina_motora() + "," + auto.getSnaga_motora()
+	    					+ "," + auto.getVrsta_goriva()  ;
+	    	pw.println(newRow);
+	    	pw.close();
+	    	bw.close();
+	      }catch(IOException ioe){
+	         System.out.println("Exception occurred:");
+	    	 ioe.printStackTrace();
+	       }
+
+	}
+
+	public void izmeniAutomobil(Integer id, Automobil auto) throws IOException {
+		
+		String filepath = "C:\\Users\\stefa\\git\\UOP\\projekat.java\\src\\app\\automobili.txt";
+		
+		try {
+            FileInputStream fstream = new FileInputStream(filepath);
+            BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+            String strLine;
+            StringBuilder fileContent = new StringBuilder();
+            while ((strLine = br.readLine()) != null) {
+                
+                String fields[] = strLine.split(",");
+                if (fields.length > 0) {
+                    if (fields[0].equals(id.toString())) {
+                        String newLine = fields[0] + ',' + auto.getVlasnik().getPrezime() + "," + auto.getMarka() + "," + auto.getModel() 
+    					+ "," + auto.getGodina_proizvodnje() + "," + auto.getZapremina_motora() + "," + auto.getSnaga_motora()
+    					+ "," + auto.getVrsta_goriva() ;
+                        fileContent.append(newLine);
+                        fileContent.append("\n");
+                    } else {
+                        fileContent.append(strLine);
+                        fileContent.append("\n");
+                    }
+                }
+            }
+            FileWriter fstreamWrite = new FileWriter(filepath);
+            BufferedWriter out = new BufferedWriter(fstreamWrite);
+            out.write(fileContent.toString());
+            out.close();
+            br.close();
+        } catch (Exception e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+		
+	}
+
+	public void obrisiAutomobil(Integer id) throws IOException {
+		
+		String filepath = "C:\\Users\\stefa\\git\\UOP\\projekat.java\\src\\app\\automobili.txt";
+		
+		RandomAccessFile file = new RandomAccessFile(filepath, "rw");
+		String delete;
+		String task="";
+		
+	    while ((delete = file.readLine()) != null) {
+	    	String fields[] = delete.split(",");
+	        if (fields[0].equals(id.toString())) {
+	            continue;
+	        }
+	        task+=delete+"\n";
+	    }
+
+	        BufferedWriter writer = new BufferedWriter(new FileWriter(filepath));
+	        writer.write(task);
+	        file.close();
+	        writer.close();
+		
+	}
+
 }
 	
 	

@@ -2,6 +2,7 @@ package model;
 
 public abstract class Korisnik {
 	
+	protected Integer id;
 	protected String ime;
 	protected String prezime;
 	protected String JMBG;
@@ -17,7 +18,7 @@ public abstract class Korisnik {
 	}
 
 
-	public Korisnik(String ime, String prezime, String JMBG, String pol, String adresa, String broj_telefona,
+	public Korisnik(Integer id, String ime, String prezime, String JMBG, String pol, String adresa, String broj_telefona,
 			String korisnicko_ime, String lozinka) {
 		super();
 		this.ime = ime;
@@ -28,6 +29,17 @@ public abstract class Korisnik {
 		this.broj_telefona = broj_telefona;
 		this.korisnicko_ime = korisnicko_ime;
 		this.lozinka = lozinka;
+	}
+
+	
+
+	public Integer getId() {
+		return id;
+	}
+
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 
