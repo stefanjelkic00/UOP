@@ -25,6 +25,7 @@ public class Musterija extends Korisnik implements MusterijaInterface{
 			String korisnicko_ime, String lozinka, String broj_sakupljenih_nagradnih_bodova) {
 		super(id, ime, prezime, JMBG, pol, adresa, broj_telefona, korisnicko_ime, lozinka);
 		this.broj_sakupljenih_nagradnih_bodova = broj_sakupljenih_nagradnih_bodova;
+		
 	}
 
 	public String getBroj_sakupljenih_nagradnih_bodova() {

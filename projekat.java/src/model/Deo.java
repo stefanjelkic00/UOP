@@ -2,6 +2,7 @@ package model;
 
 public class Deo {
 
+	private Integer id;
 	private Marka_auta marka;
 	private Model_auta model;
 	private String naziv;
@@ -11,12 +12,23 @@ public class Deo {
 		
 	}
 
-	public Deo(Marka_auta marka, Model_auta model, String naziv, int cena) {
+	public Deo(Integer id, Marka_auta marka, Model_auta model, String naziv, int cena) {
 		super();
+		this.id = id;
 		this.marka = marka;
 		this.model = model;
 		this.naziv = naziv;
 		this.cena = cena;
+	}
+
+	
+	
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public Marka_auta getMarka() {
@@ -53,7 +65,7 @@ public class Deo {
 
 	@Override
 	public String toString() {
-		return "Deo [naziv=" + naziv + "]";
+		return "Deo [id=" + id + "]";
 	}
 	
 	

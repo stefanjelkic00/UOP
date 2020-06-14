@@ -71,7 +71,7 @@ public class ServisAplikacija {
 		servis.setDelovi(delovi);
 		servis.setStatus_servisa("prosao");
 		
-		servis.dodajServis(2, 2, servis);
+//		servis.dodajServis(2, 2, servis);
 		
 		
 	}

@@ -13,9 +13,9 @@ import crud.ServisInterface;
 
 public class Servis implements ServisInterface {
 	
-	public static final String AUTO_PATH = "C:\\Users\\stefa\\git\\UOP\\projekat.java\\src\\app\\automobili.txt";
-	public static final String SERVISERI_PATH = "C:\\Users\\stefa\\git\\UOP\\projekat.java\\src\\app\\servisi.txt";
-	public static final String SERVISI_PATH = "C:\\Users\\stefa\\git\\UOP\\projekat.java\\src\\app\\servisi.txt";
+	public static final String AUTO_PATH = "C:\\Users\\hrle9\\eclipse-workspace\\ServisApplication\\src\\app\\automobili";
+	public static final String SERVISERI_PATH = "C:\\Users\\hrle9\\eclipse-workspace\\ServisApplication\\src\\app\\serviseri";
+	public static final String SERVISI_PATH = "C:\\Users\\hrle9\\eclipse-workspace\\ServisApplication\\src\\app\\servisi";
 	
 	private Integer id;
 	private Automobil auto_za_servis;
@@ -104,7 +104,7 @@ public class Servis implements ServisInterface {
 	}
 
 	@Override
-	public void dodajServis(Integer idAutomobila, Integer idServisera, Servis servis) throws IOException {
+	public void dodajServis(Integer idAutomobila, Integer idServisera, List<Deo> delovi, Servis servis) throws IOException {
 		
 		FileReader frAuto = new FileReader(AUTO_PATH);
 		BufferedReader brAuto = new BufferedReader(frAuto);
@@ -167,11 +167,11 @@ public class Servis implements ServisInterface {
 	    	BufferedWriter bw = new BufferedWriter(fw);
 	    	PrintWriter pw = new PrintWriter(bw);
 	    	String servisId = newId.toString();
-	    	String newRow =  "\n"+ servisId + ',' + markaAuta + "," + modelAuta + "," + prezimeServisera + "," + servis.getTermin() 
-	    					+ "," + servis.getOpis() + "," + servis.getDelovi() + "," + servis.getStatus_servisa();
+	    	String newRow = servisId + ',' + markaAuta + "," + modelAuta + "," + prezimeServisera + "," + servis.getTermin() 
+	    					+ "," + servis.getOpis() + "," + delovi + "," + servis.getStatus_servisa();
 	    	pw.println(newRow);
 	    	pw.close();
-	    	bw.close();
+
 	      }catch(IOException ioe){
 	         System.out.println("Exception occurred:");
 	    	 ioe.printStackTrace();

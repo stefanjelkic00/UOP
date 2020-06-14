@@ -73,9 +73,9 @@ public class Administrator extends Korisnik implements AdministratorInterface {
 	    	BufferedWriter bw = new BufferedWriter(fw);
 	    
 	    	String adminId = newId.toString();
-	    	String newRow =  "\n"+adminId + ',' + admin.getIme() + "," + admin.getPrezime() + "," + admin.getKorisnicko_ime() 
-	    					+ "," + admin.getLozinka() + "," + admin.getAdresa() + "," + admin.getBroj_telefona()
-	    					+ "," + admin.getJMBG() + "," + admin.getPlata() + "," + admin.getPol() ;
+	    	String newRow =  "\n"+ adminId + ',' + admin.getIme() + "," + admin.getPrezime() + "," + admin.getJMBG() 
+	    					+ "," + admin.getPol() + "," + admin.getAdresa() + "," + admin.getBroj_telefona()
+	    					+ "," + admin.getKorisnicko_ime() + "," + admin.getLozinka() + "," + admin.getPlata() ;
 	    	bw.write(newRow);
 	    	bw.close();
 	      }catch(IOException ioe){
