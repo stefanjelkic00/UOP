@@ -1,2 +1,0 @@
-1,BMW,X5,Arnold,09:15,opis,motor,vrata,prosao
-2,BMW,X7,Arnold,10:00,opis novih kola,[Deo [id=1], Deo [id=2]],prosao

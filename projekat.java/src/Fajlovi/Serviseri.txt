@@ -1,0 +1,3 @@
+1|Rajko|Martin|12345678910111|MUSKI|Sekspirova60|0615599112|Rale|rale|50000|Limar
+2|Petar|Mirkovic|1203910391023|MUSKI|Balzakova12|0182731671|Pera|pera|50000|Automehanicar
+3|e|e|e|MUSKI|e|e|e|e|11|Limar

@@ -1,3 +1,0 @@
-1,Mohamed,Salah,2811000800261,muski,Anfield Road 36,0628695482,m_salah,salah00,5000
-2,Sadio,Mane,2601222199019,muski,Anfield Road 32,0633655981,sadio_m,sadio00,5000
-3,Gini,Wijnaldum,2142531233102,muski,Anfield Road 30,104564305,Gini_W,gini00,5000

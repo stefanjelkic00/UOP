@@ -1,0 +1,6 @@
+1|1|1|25/8/2020(15:30)|Popravka branika|izvrsen
+2|2|2|26/8/2020(10:40)|Zamena stakla|nezakazan
+3|3|1|24/10/2020(18:00)|Zamena auspuha|zakazan
+4|4|1|10:00|Zamena felni|izvrsen
+5|2|1|s|s|izvrsen
+6|3|1|15:00|sssss|izvrsen
